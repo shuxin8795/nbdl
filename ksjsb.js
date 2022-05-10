@@ -10,7 +10,7 @@ IOS/安卓： 快手极速版已经去掉助力了结尾404正常哦。
 */
 on:
   schedule:
-    - cron:  '30 5,17 * * *'
+    - cron:  '0 0 2,3,4,5,6,13,14,15,16,17 * * ? '
 
 const $$ = Envcc('');
 let acckey = $$["isNode"]() ? process["env"]["cdkey"] ? process["env"]["cdkey"] : '' : $$["getdata"]("cdkey") ? $$["getdata"]("cdkey") : '',
