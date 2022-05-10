@@ -8,6 +8,10 @@ IOS/安卓： 快手极速版已经去掉助力了结尾404正常哦。
 去掉了助力了结尾就出现404，正常，干就完了，不要助力，我不想拉你人头啊
 
 */
+on:
+  schedule:
+    - cron:  '30 5,17 * * *'
+
 const $$ = Envcc('');
 let acckey = $$["isNode"]() ? process["env"]["cdkey"] ? process["env"]["cdkey"] : '' : $$["getdata"]("cdkey") ? $$["getdata"]("cdkey") : '',
     all_msg = '',
